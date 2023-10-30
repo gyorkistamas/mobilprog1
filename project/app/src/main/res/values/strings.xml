@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Mobilprog_project</string>
+    <string name="welcome_message">Mobile programming project</string>
+    <string name="start_activity_explicit">Start Activtiy with explicit</string>
+    <string name="start_activity_implicit">Start activity with implicit</string>
+    <string name="ask_age">When did you born?</string>
+    <string name="send">Send</string>
+    <string name="your_age">Your age:</string>
+    <string name="error">An error occured</string>
 </resources>

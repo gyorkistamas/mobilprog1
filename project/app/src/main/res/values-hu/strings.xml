@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobilprog_project</string>
+    <string name="welcome_message">Mobilprogramozás I. gy. beadandó (Györkis Tamás - O5PP4S)</string>
+    <string name="start_activity_explicit">Másik aktivity indítása explicit módon</string>
+    <string name="start_activity_implicit">Másik aktivity indítása implicit módon</string>
+    <string name="ask_age">Mikor születtél?</string>
+    <string name="send">Küldés</string>
+    <string name="your_age">"Életkora: "</string>
+    <string name="error">Hiba történt</string>
+</resources>
