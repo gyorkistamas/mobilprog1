@@ -6,6 +6,6 @@
     <string name="start_activity_implicit">Másik aktivity indítása implicit módon</string>
     <string name="ask_age">Mikor születtél?</string>
     <string name="send">Küldés</string>
-    <string name="your_age">"Életkora: "</string>
+    <string name="your_age">Életkora</string>
     <string name="error">Hiba történt</string>
 </resources>
