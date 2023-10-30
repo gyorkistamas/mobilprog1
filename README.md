@@ -1,1 +1,1 @@
-# Mobilprogramozás I. gyakorlat beadnadó - Györkis Tamás - O5PP4S
+# Mobilprogramozás I. gyakorlat beadandó - Györkis Tamás - O5PP4S
