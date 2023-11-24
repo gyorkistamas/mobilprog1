@@ -46,5 +46,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent("com.tamas.gyorkis.mobilprog_project.ASKBIRTHDAY");
             activityResultLauncher.launch(intent);
         });
+
+
+        Button adapter = findViewById(R.id.btnStartAdapter);
+        adapter.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AdapterActivity.class);
+            startActivity(intent);
+        });
     }
 }

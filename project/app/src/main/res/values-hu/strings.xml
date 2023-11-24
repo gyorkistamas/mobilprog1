@@ -8,4 +8,6 @@
     <string name="send">Küldés</string>
     <string name="your_age">Életkora</string>
     <string name="error">Hiba történt</string>
+    <string name="adapteractivity">Adapter activity indítása</string>
+    <string name="jokes">Viccek</string>
 </resources>

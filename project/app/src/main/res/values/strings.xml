@@ -7,4 +7,8 @@
     <string name="send">Send</string>
     <string name="your_age">Your age</string>
     <string name="error">An error occured</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="adapteractivity">Start adapter activity</string>
+    <string name="jokes">Jokes</string>
 </resources>
