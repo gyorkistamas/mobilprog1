@@ -2,10 +2,13 @@ package com.tamas.gyorkis.mobilprog_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.BaseColumns;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -29,6 +32,14 @@ public class AdapterActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent = new Intent(AdapterActivity.this, SubjectViewActivity.class);
+            intent.putExtra("type", ActivityOpenType.MODIFY);
+            intent.putExtra("id", id);
+
+            startActivity(intent);
+        });
 
     }
 
@@ -76,5 +87,7 @@ public class AdapterActivity extends AppCompatActivity {
 
             subjects.add(new Subject(id, name, code, credit));
         }
+
+        openHelper.close();
     }
 }

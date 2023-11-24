@@ -14,6 +14,9 @@ public class Subject {
         this.credit = credit;
     }
 
+    public Subject() {
+    }
+
     public Long getId() {
         return id;
     }

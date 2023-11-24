@@ -11,4 +11,9 @@
     <string name="adapteractivity">Adapter activity indítása</string>
     <string name="subjects">Tantárgyak</string>
     <string name="credit">Kredit:</string>
+    <string name="name">Név:</string>
+    <string name="code">Kód:</string>
+    <string name="save">Mentés</string>
+    <string name="cancel">Mégsem</string>
+    <string name="delete">Törlés</string>
 </resources>
