@@ -10,5 +10,6 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="adapteractivity">Start adapter activity</string>
-    <string name="jokes">Jokes</string>
+    <string name="subjects">Subjects</string>
+    <string name="credit">Credit:</string>
 </resources>

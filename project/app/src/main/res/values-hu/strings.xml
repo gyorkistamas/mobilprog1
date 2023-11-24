@@ -9,5 +9,6 @@
     <string name="your_age">Életkora</string>
     <string name="error">Hiba történt</string>
     <string name="adapteractivity">Adapter activity indítása</string>
-    <string name="jokes">Viccek</string>
+    <string name="subjects">Tantárgyak</string>
+    <string name="credit">Kredit:</string>
 </resources>
