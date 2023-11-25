@@ -16,4 +16,5 @@
     <string name="save">Mentés</string>
     <string name="cancel">Mégsem</string>
     <string name="delete">Törlés</string>
+    <string name="newSubject">Új tárgy</string>
 </resources>

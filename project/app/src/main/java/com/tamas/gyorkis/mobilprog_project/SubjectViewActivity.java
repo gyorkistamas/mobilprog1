@@ -8,7 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.BaseColumns;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -62,10 +61,11 @@ public class SubjectViewActivity extends AppCompatActivity {
         });
 
         if (openType == 1) {
-            getSubject(intent.getIntExtra("id", 0));
+            Long id = intent.getLongExtra("id", 0L);
+            getSubject(id);
             name.setText(instance.getName());
             code.setText(instance.getCode());
-            credit.setText(instance.getCredit());
+            credit.setText(String.valueOf(instance.getCredit()));
         }
 
     }
@@ -127,7 +127,7 @@ public class SubjectViewActivity extends AppCompatActivity {
     }
 
 
-    private void getSubject(int id) {
+    private void getSubject(Long id) {
         SubjectsOpenHelper openHelper = new SubjectsOpenHelper(this);
 
         SQLiteDatabase db = openHelper.getReadableDatabase();

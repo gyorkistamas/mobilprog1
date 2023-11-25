@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,13 +26,13 @@ public class AdapterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adapter);
 
-        getSubjects();
+        //getSubjects();
 
-        adapter = new SubjectAdapter(subjects, this);
+        //adapter = new SubjectAdapter(subjects, this);
 
         listView = findViewById(R.id.listView);
 
-        listView.setAdapter(adapter);
+        //listView.setAdapter(adapter);
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(AdapterActivity.this, SubjectViewActivity.class);
@@ -41,6 +42,23 @@ public class AdapterActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button newButton = findViewById(R.id.buttonNew);
+
+        newButton.setOnClickListener(v -> {
+            Intent intent = new Intent(AdapterActivity.this, SubjectViewActivity.class);
+            intent.putExtra("type", ActivityOpenType.CREATE);
+            startActivity(intent);
+        });
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getSubjects();
+        adapter = new SubjectAdapter(subjects, this);
+        listView.setAdapter(adapter);
     }
 
     private void getSubjects() {
@@ -73,7 +91,7 @@ public class AdapterActivity extends AppCompatActivity {
         while(cursor.moveToNext()) {
             int index;
 
-            index = cursor.getColumnIndexOrThrow("_id");
+            index = cursor.getColumnIndexOrThrow(SubjectContract.SubjectEntry._ID);
             Long id = cursor.getLong(index);
 
             index = cursor.getColumnIndexOrThrow(SubjectContract.SubjectEntry.COLUMN_NAME_NAME);
