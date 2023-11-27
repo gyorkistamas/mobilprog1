@@ -1,4 +1,4 @@
-package com.tamas.gyorkis.mobilprog_project;
+package com.tamas.gyorkis.mobilprog_project.Activites;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.tamas.gyorkis.mobilprog_project.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

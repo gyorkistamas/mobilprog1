@@ -1,4 +1,4 @@
-package com.tamas.gyorkis.mobilprog_project;
+package com.tamas.gyorkis.mobilprog_project.SQLite;
 
 public class Subject {
 

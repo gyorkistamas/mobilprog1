@@ -13,22 +13,22 @@
         android:theme="@style/Theme.Mobilprog_project"
         tools:targetApi="31">
         <activity
-            android:name=".SubjectViewActivity"
+            android:name=".Activites.SubjectViewActivity"
             android:exported="false" />
         <activity
-            android:name=".AdapterActivity"
+            android:name=".Activites.AdapterActivity"
             android:exported="false" />
         <activity
-            android:name=".ParameterActivity"
+            android:name=".Activites.ParameterActivity"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.tamas.gyorkis.mobilprog_project.ASKBIRTHDAY" />
+                <action android:name="ASKBIRTHDAY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activites.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

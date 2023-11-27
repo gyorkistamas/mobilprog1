@@ -1,4 +1,4 @@
-package com.tamas.gyorkis.mobilprog_project;
+package com.tamas.gyorkis.mobilprog_project.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,10 +7,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.BaseColumns;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+
+import com.tamas.gyorkis.mobilprog_project.ActivityOpenType;
+import com.tamas.gyorkis.mobilprog_project.R;
+import com.tamas.gyorkis.mobilprog_project.SQLite.Subject;
+import com.tamas.gyorkis.mobilprog_project.Adapter.SubjectAdapter;
+import com.tamas.gyorkis.mobilprog_project.SQLite.SubjectContract;
+import com.tamas.gyorkis.mobilprog_project.SQLite.SubjectsOpenHelper;
 
 import java.util.ArrayList;
 import java.util.List;

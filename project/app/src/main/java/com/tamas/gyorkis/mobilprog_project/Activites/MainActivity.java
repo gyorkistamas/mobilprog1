@@ -1,7 +1,5 @@
-package com.tamas.gyorkis.mobilprog_project;
+package com.tamas.gyorkis.mobilprog_project.Activites;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.tamas.gyorkis.mobilprog_project.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button implicit = findViewById(R.id.btnStartImplicit);
         implicit.setOnClickListener((v) -> {
-            Intent intent = new Intent("com.tamas.gyorkis.mobilprog_project.ASKBIRTHDAY");
+            Intent intent = new Intent("ASKBIRTHDAY");
             activityResultLauncher.launch(intent);
         });
 

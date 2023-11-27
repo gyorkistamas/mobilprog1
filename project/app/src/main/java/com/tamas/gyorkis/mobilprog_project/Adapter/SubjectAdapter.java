@@ -1,4 +1,4 @@
-package com.tamas.gyorkis.mobilprog_project;
+package com.tamas.gyorkis.mobilprog_project.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.tamas.gyorkis.mobilprog_project.R;
+import com.tamas.gyorkis.mobilprog_project.SQLite.Subject;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.tamas.gyorkis.mobilprog_project;
+package com.tamas.gyorkis.mobilprog_project.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,11 @@ import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.tamas.gyorkis.mobilprog_project.R;
+import com.tamas.gyorkis.mobilprog_project.SQLite.Subject;
+import com.tamas.gyorkis.mobilprog_project.SQLite.SubjectContract;
+import com.tamas.gyorkis.mobilprog_project.SQLite.SubjectsOpenHelper;
 
 public class SubjectViewActivity extends AppCompatActivity {
 
